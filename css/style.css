@@ -1,8 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+:root {
+    --verde-logo: #9BCA3B; /*  Define a variável de cor --cor-primaria com o valor #*****  */
+    --verde-escuro: #2C3711;
+    --preto: #000000;
+  }
+
+  @keyframes surgir1{
+    0%{
+        transform: translateY(100px);
+        color: transparent !important;
+        -webkit-text-stroke: 1px transparent;  /*deixa a letra só com a borda*/
+
+    }
+    100%{
+        transform: translateY(0px);
+        -webkit-text-stroke: 1px #fff;  /*deixa a letra só com a borda*/
+    }
+}
 *{
     margin: auto;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
 }
 .container{
     width: 100%;
@@ -21,7 +42,7 @@ nav{
     flex-wrap: wrap;
     padding: 5px 0;
     background-color: transparent; /* Define a cor de fundo transparente */
-    backdrop-filter: blur(5px); /* Aplica o efeito de desfoque */
+    backdrop-filter: blur(20px); /* Aplica o efeito de desfoque */
     -webkit-backdrop-filter: blur(5px); /* Versão para navegadores com prefixo webkit */
     position: fixed;
     z-index: 999;  
@@ -66,4 +87,24 @@ nav ul li a::after{
 }
 nav ul li a:hover::after{
     width: 65%;
+}
+/*    */
+.grid{
+    display: grid;
+}
+/*se quiser centralizr ellemento filho no .container só joga grid no class pai e place itens no filho*/
+.banner{
+    color: #fff;
+    bottom: 8%;
+    margin: auto;
+    padding: 200px 0px 0px 0px;
+    place-items: center;
+}
+.banner h1{
+    font-family: 'poppins', sans-serif;
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;  /*deixa a letra só com a borda*/
+    animation: surgir1 1s;
+    text-align: center;
 }
