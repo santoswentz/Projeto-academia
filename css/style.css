@@ -7,14 +7,14 @@
 
   @keyframes surgir1{
     0%{
-        transform: translateY(100px);
+        transform: translateY(200px);
         color: transparent !important;
-        -webkit-text-stroke: 1px transparent;  /*deixa a letra só com a borda*/
+        opacity: 0;
 
     }
     100%{
         transform: translateY(0px);
-        -webkit-text-stroke: 1px #fff;  /*deixa a letra só com a borda*/
+        opacity: 1;
     }
 }
 *{
@@ -42,7 +42,6 @@ nav{
     height: 80px;
     align-items: center;
     flex-wrap: wrap;
-    padding: 5px 0;
     background-color: transparent; /* Define a cor de fundo transparente */
     backdrop-filter: blur(20px); /* Aplica o efeito de desfoque */
     -webkit-backdrop-filter: blur(5px); /* Versão para navegadores com prefixo webkit */
@@ -94,6 +93,9 @@ nav ul li a:hover::after{
 .grid{
     display: grid;
 }
+.flex{
+    display: flex;
+}
 /*se quiser centralizr ellemento filho no .container só joga grid no class pai e place itens no filho*/
 .banner{
     color: #fff;
@@ -104,20 +106,35 @@ nav ul li a:hover::after{
 }
 .banner h1{
     font-family: 'poppins', sans-serif;
-    font-size: 100px;
+    font-size: 70px;
     color: transparent;
     -webkit-text-stroke: 1px #fff;  /*deixa a letra só com a borda*/
-    animation: surgir1 1s;
+    animation: surgir1 2s;
     text-align: center;
 }
 .banner h1 span{
     color: #fff;
     -webkit-text-stroke: 1px #fff;  /*deixa a letra só com a borda*/
 }
+.banner::hover{
+    content: '';
+    height: 2px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
 /*Localização*/
 .parallax1{
-    background: url('/img/brick_wall_black.jpg'), rgba(0,0,0,7);
+    background-image: linear-gradient(transparent, rgba(0,0,0,7)), url('../img/brick_wall_black.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+.localizacao{
+    background-color: #fff;
+    height: 50vh;
+    width: 68vh;
+}
+.localizacao1div{
+    
 }
