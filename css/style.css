@@ -208,15 +208,19 @@ footer h2{
     color: black;
     background-color: #fff;
     display:inline-block;
-    height: 50vh;
-    width: 60vh;
+    height: 60vh;
+    width: 80vh;
     box-shadow: 0 0 0.8em rgb(109, 109, 109);
+    display: flex;
+    border: 4px #fff solid;
+}
+.titulo{
+    background-color: #000000;
+    color:#fff;
 }
 .escrever{
-    display: inline-block;
-    width: 30vh;
+    width: 40vh;
 }
 .slecionar{
-    display: inline-block;
-    width: 30vh;
+    width: 40vh;
 }
