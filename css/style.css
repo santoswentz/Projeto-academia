@@ -54,13 +54,9 @@ nav{
     top: 0;
     left: 0;
 }
-.dropdown{
-    position:relative;
-}
-.dropdown *{
-    box-sizing: border-box;
-}
 .select{
+    position:relative;
+    box-sizing: border-box;
     background: #000000;
     color:#fff;
     display: flex;
@@ -72,13 +68,7 @@ nav{
     cursor: pointer;
     transition: background 0.3s;
     width: 300px;
-}
-.select-clicked{
-    border: 2px #26489a solid;
-    box-shadow: 0 0 0.8em #26489a;
-}
-.select:hover{
-    background: #323741;
+    margin:10px;
 }
 .caret{
     width: 0;
@@ -88,9 +78,6 @@ nav{
     border-top: 6px solid #fff;
     transition: 0.3;
 }
-.caret-rotate{
-    transform: rotate(180deg);
-}
 .menu{
     list-style: none;
     padding: 0.2em 0.5em;
@@ -98,7 +85,6 @@ nav{
     border: 1px #363a43 solid;
     box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
     border-radius: 0.5em;
-    color: #9fa5b5;
     position: absolute;
     top: 3.75em;
     left: 50%;
@@ -118,12 +104,19 @@ nav{
 .menu li:hover{
     background: #2a2d35;
 }
-.active{
-    background: #23242a;
+.select a{
+    text-decoration:none;
+    color: #9fa5b5;
 }
-.menu-open{
-    display: block;
-    opacity: 1;
+.select:hover{
+    background: #323741;
+    .menu{
+        display: block;
+        opacity: 1;
+    }
+    .caret{
+        transform: rotate(180deg);
+    }
 }
 .logo{
     width: 80px;
@@ -223,4 +216,8 @@ footer h2{
 }
 .slecionar{
     width: 40vh;
+}
+.enviar{
+    width: 100px;
+    
 }
