@@ -86,7 +86,7 @@ nav{
     box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
     border-radius: 0.5em;
     position: absolute;
-    top: 3.75em;
+    top: 3.35em;
     left: 50%;
     width: 100%;
     transform: translateX(-50%);
@@ -194,10 +194,11 @@ footer a{
 footer h2{
     font-size: 40px;
 }
+ \*Cadastro aluno
 .alinhamentoPerguntas{
     padding: 170px 30% 0px 0px;
 }
-.perguntas{
+.aluno{
     color: black;
     background-color: #fff;
     display:inline-block;
@@ -206,10 +207,23 @@ footer h2{
     box-shadow: 0 0 0.8em rgb(109, 109, 109);
     display: flex;
     border: 4px #fff solid;
+    border-radius: 15px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .titulo{
     background-color: #000000;
     color:#fff;
+    border-radius: 15px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80vh;
+    height: 20vh;
+    border: 4px #000000 solid;
 }
 .escrever{
     width: 40vh;
@@ -218,6 +232,103 @@ footer h2{
     width: 40vh;
 }
 .enviar{
-    width: 100px;
-    
+    padding: 5px;
+    border-radius: 15px;
+    outline: none;
+    background-color: #000000;
+    cursor: pointer;
+    color: #fff;
+}
+.escrever input{
+    padding: 5px;
+    border-radius: 15px;
+    outline: none
+}
+.selecionar input{
+    width: 50px;
+    padding: 5px;
+}
+.professor{
+    background-color: #D3D3D3;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ padding: 30px;
+ border-radius: 40px;
+}
+.professor input{
+    padding: 15px;
+    border-radius: 15px;
+    outline: none;
+}
+.cpf{
+    background-color: #D3D3D3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    border-radius: 40px;
+}
+.cpf input{
+    padding: 15px;
+    border-radius: 15px;
+    outline: none;
+}
+.e-mail{
+    background-color: #D3D3D3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    border-radius: 40px;
+}
+.e-mail input{
+    padding: 15px;
+    border-radius: 15px;
+    outline: none;
+}
+.login{
+    background-color: white;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ padding: 60px;
+ border-radius: 15px;
+}
+.login input{
+    padding: 15px;
+    border-radius: 15px;
+    outline: none;
+}
+.nome{
+    background-color: #D3D3D3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    border-radius: 40px;
+}
+.nome input{
+    padding: 15px;
+    border-radius: 15px;
+    outline: none;
+}
+.planoP{
+    background-color: #D3D3D3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    border-radius: 40px;
+}
+.planoP{
+    padding: 15px;
+ border-radius: 15px;
+ outline: none;
 }
