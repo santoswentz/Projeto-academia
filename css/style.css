@@ -65,7 +65,6 @@ nav{
     border: 2px #000000 solid;
     border-radius: 0.5em;
     padding: 1em;
-    cursor: pointer;
     transition: background 0.3s;
     width: 300px;
     margin:10px;
