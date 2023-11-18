@@ -9,38 +9,35 @@ body{
  background-repeat: no-repeat;
   background-size: 100%;
  }
- body{
- font-family: Verdana;
- }
- 
-div{
- background-color: #D3D3D3;
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%,-50%);
- padding: 30px;
- border-radius: 40px;
- }
- input{
- padding: 15px;
- border-radius: 15px;
- outline: none;
- }
- button{
-background-color: #A9A9A9;
-border-radius: 10px;
-padding: 15px;
-color: white;
-font-size: 15px;
- }
- button:hover{
- background-color: grey;
- cursor: pointer;
- }
  </style>
-		
-<div>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="select">
+            <span class="selected">Login</span>
+            <div class="caret"></div>    
+            <ul class="menu">
+                <a href="cpf.html"><li>CPF</li></a>
+                <a href="email.html"><li>E-mail</li></a>
+                <a href="nome.html"><li>Nome</li></a>
+            </ul>
+        </div>
+        <div class="select">
+            <span class="selected">Cadastros</span>
+            <div class="caret"></div>    
+            <ul class="menu">
+                <a href="cadastroAluno.html"><li>Aluno</li></a>
+                <a href="cadastroprofessor.html"><li>Professor</li></a>
+            </ul>
+        </div>
+        <a href="index.html" class="linkVoltar">
+            <div class="voltar">
+                Voltar
+            </div>
+        </a>
+    </nav>
+<div class="login2">
 <center><h1> Login </h1></center>
 <input type="text"  size="35" maxlength="256" placeholder="Usuário">
 <br><br>
@@ -50,11 +47,9 @@ font-size: 15px;
 <br><br>
 <input type="password" size="35" maxlength="256" placeholder="Confirmar Senha">
 <br><br>
-<center><button>Enviar</button>
-<h6><a href="index.html"> Voltar</a></h6></center>
+<center><button class="enviar">Enviar</button></center>
 </div>
 
 
-</head>
 </body>
 </html>

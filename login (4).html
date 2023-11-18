@@ -9,9 +9,6 @@ body{
  background-repeat: no-repeat;
   background-size: 100%;
  }
- body{
- font-family: styles;
- }
  </style>
  <link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,16 +23,19 @@ body{
                 <a href="nome.html"><li>Nome</li></a>
             </ul>
         </div>
-        <div class="dropdown">
-            <div class="select">
-                <span class="selected">Cadastros</span>
-                <div class="caret"></div>    
-                <ul class="menu">
-                    <a href="cadastroAluno.html"><li>Aluno</li></a>
-                    <a href="cadastroprofessor.html"><li>Professor</li></a>
-                </ul>
-            </div>
+        <div class="select">
+            <span class="selected">Cadastros</span>
+            <div class="caret"></div>    
+            <ul class="menu">
+                <a href="cadastroAluno.html"><li>Aluno</li></a>
+                <a href="cadastroprofessor.html"><li>Professor</li></a>
+            </ul>
         </div>
+        <a href="index.html" class="linkVoltar">
+            <div class="voltar">
+                Voltar
+            </div>
+        </a>
     </nav>
 <div class="login">
 <center><h1> Login </h1></center>
@@ -43,10 +43,8 @@ body{
 <br><br>
 <input type="password" size="35" maxlength="256" placeholder="Senha">
 <br><br>
-<center><button class="enviar">Enviar</button>
-<h6><a href="index.html"> Voltar</a></h6></center>
+<center><button class="enviar">Enviar</button></center>
 </div>
-
 
 </body>
 </html>
