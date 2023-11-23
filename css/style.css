@@ -32,7 +32,7 @@ html{
     flex-direction: row-reverse;
 }
 .background1{
-    background-image: linear-gradient(rgba(0,0,0,9),transparent), url('/img/pesos-de-exercicios-dumbbell-de-ferro-com-placas-extra.jpg');
+    background-image: linear-gradient(rgba(0,0,0,9),transparent), url('../img/pesos-de-exercicios-dumbbell-de-ferro-com-placas-extra.jpg');
     background-size:cover;
     background-position: center;
     width: 100%;
@@ -54,6 +54,94 @@ nav{
     top: 0;
     left: 0;
 }
+.nav a{
+        text-decoration:none;
+}
+.voltar{
+    position:relative;
+    box-sizing: border-box;
+    background: #000000;
+    color:#fff;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    border: 2px #000000 solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    transition: background 0.3s;
+    width: 150px;
+    margin:10px;
+}
+.voltar:hover{
+    background: #323741;
+}
+.linkVoltar{
+    text-decoration:none;
+    color:#fff;
+}
+.select{
+    position:relative;
+    box-sizing: border-box;
+    background: #000000;
+    color:#fff;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    border: 2px #000000 solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    transition: background 0.3s;
+    width: 300px;
+    margin:10px;
+}
+.caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3;
+}
+.menu{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #323741;
+    border: 1px #363a43 solid;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    position: absolute;
+    top: 3.35em;
+    left: 50%;
+    width: 95%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+.menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5;
+    cursor: pointer;
+}
+.menu li:hover{
+    background: #2a2d35;
+}
+.select a{
+    text-decoration:none;
+    color: #9fa5b5;
+}
+.select:hover{
+    background: #323741;
+    .menu{
+        display: block;
+        opacity: 1;
+    }
+    .caret{
+        transform: rotate(180deg);
+    }
+}
 .logo{
     width: 80px;
     cursor: pointer;
@@ -63,36 +151,7 @@ nav{
     width: 30px;
     cursor: pointer;
 }
-nav ul{
-    flex: 1;
-    text-align: right;
-    padding-right: 30px;
-}
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 30px;
-}
-nav ul li a{
-    color: #fff;
-    text-decoration: none;
-    position: relative;
-}
-/*Animação navbar*/
-nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #fff;
-    transition: width 0.6s;
-}
-nav ul li a:hover::after{
-    width: 65%;
-}
+
 /*se quiser centralizr ellemento filho no .container só joga grid no class pai e place itens no filho*/
 .background1 .backtxt{
     animation: surgir1 2s;
@@ -132,4 +191,322 @@ nav ul li a:hover::after{
 .localizacao iframe{
     height: 100%;
     width: 100%;
+}
+footer{
+    background-color: #000000;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:100%;
+    height: 25vh;
+    width: 100%;
+}
+footer div{
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 50px;
+    
+}
+footer div ul{
+    list-style: none;
+}
+footer a{
+    text-decoration: none;
+    margin: 10px 10px;
+}
+footer h2{
+    font-size: 40px;
+}
+ \*Cadastro aluno
+.alinhamentoPerguntas{
+    padding: 170px 30% 0px 0px;
+}
+.aluno{
+    color: black;
+    background-color: #fff;
+    display:inline-block;
+    height: 60vh;
+    width: 80vh;
+    box-shadow: 0 0 0.8em rgb(109, 109, 109);
+    display: flex;
+    border: 4px #fff solid;
+    border-radius: 15px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.titulo{
+    background-color: #000000;
+    color:#fff;
+    border-radius: 15px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80vh;
+    height: 20vh;
+    border: 4px #000000 solid;
+}
+.escrever{
+    width: 40vh;
+}
+.slecionar{
+    width: 40vh;
+}
+.enviar{
+    padding: 5px;
+    border-radius: 15px;
+    outline: none;
+    background-color: #000000;
+    cursor: pointer;
+    color: #fff;
+}
+.escrever input{
+    padding: 5px;
+    border-radius: 15px;
+    outline: none
+}
+.selecionar input{
+    width: 50px;
+    padding: 5px;
+}
+.professor{
+    background-color: #D3D3D3;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ padding: 30px;
+ border-radius: 40px;
+}
+.professor input{
+    padding: 15px;
+    border-radius: 15px;
+    outline: none;
+}
+.cpf{
+    background-color: #D3D3D3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    border-radius: 40px;
+}
+.cpf input{
+    padding: 15px;
+    border-radius: 15px;
+    outline: none;
+}
+.e-mail{
+    background-color: #D3D3D3;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    border-radius: 40px;
+}
+.e-mail input{
+    padding: 15px;
+    border-radius: 15px;
+    outline: none;
+}
+.login{
+    background-color: white;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ padding: 60px;
+ border-radius: 15px;
+}
+.login input{
+    padding: 15px;
+    border-radius: 15px;
+    outline: none;
+}
+.nome{
+    background-color: #D3D3D3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    border-radius: 40px;
+}
+.nome input{
+    padding: 15px;
+    border-radius: 15px;
+    outline: none;
+}
+.planoP{
+    background-color: #D3D3D3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    border-radius: 40px;
+}
+.planoP input{
+    padding: 15px;
+ border-radius: 15px;
+ outline: none;
+}
+.login2{
+    background-color: #D3D3D3;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ padding: 30px;
+ border-radius: 40px;
+}
+.login2 input{
+    padding: 15px;
+    border-radius: 15px;
+    outline: none;
+}
+.login3{
+    background-color: #D3D3D3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    border-radius: 40px;
+}
+.login3 input{
+    padding: 15px;
+    border-radius: 15px;
+    outline: none;
+}
+/*Compra de planos*/
+.plano1{
+    background-color: #000000;
+    border-radius: 15px;
+    border: 20px #000000 solid;
+    position:absolute;
+    height: 40vh;
+    top:30vh;
+    right: 65%;
+    color: #fff;
+}
+.plano1 h1{
+    height: 15vh;
+}
+.plano1 p{
+    height: 15vh;
+}
+.plano1 span{
+    height: 15vh;
+    color: red;
+    top:100%
+}
+.plano2{
+    background-color: #000000;
+    border-radius: 15px;
+    border: 20px #000000 solid;
+    position:absolute;
+    height: 40vh;
+    top:30vh;
+    right: 25%;
+    color: #fff;
+}
+.plano2 h1{
+    height: 15vh;
+}
+.plano2 p{
+    height: 15vh;
+}
+.plano2 span{
+    height: 15vh;
+    color: red;
+    top:100%
+}
+.atividades{
+    background-color: #fff;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.atividades .tituloA{
+    position:absolute;
+    left: 37%;
+    font-size: 10vh;
+}
+.danca{
+    background-color: #000000;
+    border-radius: 15px;
+    border: 20px #000000 solid;
+    position:absolute;
+    height: 40vh;
+    width: 30vh;
+    top: 140vh;
+    right: 70%;
+    color: #fff;
+}
+.danca h1{
+    font-size: 30px;
+    height: 13vh;
+}
+.danca p{
+    height: 13vh;
+}
+.danca span{
+    height: 13vh;
+    color:red;
+}
+.luta1{
+    background-color: #000000;
+    border-radius: 15px;
+    border: 20px #000000 solid;
+    position:absolute;
+    height: 50vh;
+    width: 40vh;
+    top: 135vh;
+    right: 40%;
+    color: #fff;
+}
+.luta1 h1{
+    font-size: 40px;
+    height: 15vh;
+}
+.luta1 p{
+    height: 15vh;
+    font-size: 20px;
+}
+.luta1 span{
+    height: 15vh;
+    color:red;
+    font-size: 20px;
+}
+.luta2{
+    background-color: #000000;
+    border-radius: 15px;
+    border: 20px #000000 solid;
+    position:absolute;
+    height: 40vh;
+    width: 30vh;
+    top: 140vh;
+    right: 15%;
+    color: #fff;
+}
+.luta2 h1{
+    font-size: 30px;
+    height: 13vh;
+}
+.luta2 p{
+    height: 13vh;
+}
+.luta2 span{
+    height: 13vh;
+    color:red;
 }
