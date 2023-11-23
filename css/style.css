@@ -219,7 +219,7 @@ footer a{
 footer h2{
     font-size: 40px;
 }
- \*Cadastro aluno
+ /*Cadastros*/
 .alinhamentoPerguntas{
     padding: 170px 30% 0px 0px;
 }
@@ -287,6 +287,7 @@ footer h2{
     border-radius: 15px;
     outline: none;
 }
+/*Pesquisas*/
 .cpf{
     background-color: #D3D3D3;
     position: absolute;
@@ -311,20 +312,6 @@ footer h2{
     border-radius: 40px;
 }
 .e-mail input{
-    padding: 15px;
-    border-radius: 15px;
-    outline: none;
-}
-.login{
-    background-color: white;
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%,-50%);
- padding: 60px;
- border-radius: 15px;
-}
-.login input{
     padding: 15px;
     border-radius: 15px;
     outline: none;
@@ -357,6 +344,22 @@ footer h2{
  border-radius: 15px;
  outline: none;
 }
+/*Logins*/
+.login{
+    background-color: white;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ padding: 60px;
+ border-radius: 15px;
+ opacity: 0.8;
+}
+.login input{
+    padding: 15px;
+    border-radius: 15px;
+    outline: none;
+}
 .login2{
     background-color: #D3D3D3;
  position: absolute;
@@ -365,6 +368,7 @@ footer h2{
  transform: translate(-50%,-50%);
  padding: 30px;
  border-radius: 40px;
+ opacity: 0.8;
 }
 .login2 input{
     padding: 15px;
@@ -379,6 +383,7 @@ footer h2{
     transform: translate(-50%,-50%);
     padding: 30px;
     border-radius: 40px;
+    opacity: 0.8;
 }
 .login3 input{
     padding: 15px;
