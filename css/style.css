@@ -32,7 +32,7 @@ html{
     flex-direction: row-reverse;
 }
 .background1{
-    background-image: linear-gradient(rgba(0,0,0,9),transparent), url('/img/pesos-de-exercicios-dumbbell-de-ferro-com-placas-extra.jpg');
+    background-image: linear-gradient(rgba(0,0,0,9),transparent), url('../img/pesos-de-exercicios-dumbbell-de-ferro-com-placas-extra.jpg');
     background-size:cover;
     background-position: center;
     width: 100%;
@@ -194,12 +194,13 @@ nav{
 }
 footer{
     background-color: #000000;
-    padding: 15px;
     color:#fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    top:100%;
+    height: 25vh;
+    width: 100%;
 }
 footer div{
     width: 300px;
